@@ -1,34 +1,40 @@
 body {
-    background: #196dff;
-    text-align: center;
+  background: #1d1c1c;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 10px;
+  color: white;
 }
 
-#main {
-    width: 1000px;
-    height: 600px;
-    background: #ffab19;
-    margin: 25px auto;
-    border: solid 2px #ff3819;
-    padding: 10px;
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
 }
 
-h1 {
-    text-align: center;
-    font-family: "Times new Roman";
-    font: 24pt;
-    color: #ff3819;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-hr {
-    height: 2px;
-    background: #ff3819;
-    border: none;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #121212;
+  color: white;
 }
 
-p {
-    font-family: "Calibri";
-    font-size: 12pt;
-    text-align: left;
-    text-indent: 48px;
-    color: #2f2d2d;
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+  border-bottom: 2px solid red;
 }
