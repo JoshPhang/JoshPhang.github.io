@@ -6,6 +6,32 @@ body {
   color: white;
 }
 
+.page1 {
+  position: relative;
+  text-align: center;
+  color: 1d1c1c;
+  font-size: 98px;
+  top: 100px;
+  animation: fade-in 5000ms;
+  animation-fill-mode: forwards;
+}
+
+.page2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  top: 100px;
+  animation: grow 5000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  100% {
+    color: white;
+  }
+}
+
 .topnav {
   background-color: #333;
   overflow: hidden;
