@@ -9,11 +9,22 @@ body {
 .page1 {
   position: relative;
   text-align: center;
-  color: 1d1c1c;
+  color: #1d1c1c;
   font-size: 98px;
   top: 100px;
   animation: fade-in 5000ms;
   animation-fill-mode: forwards;
+}
+
+.welcome {
+  position: relative;
+  text-align: center;
+  color: #1d1d1c;
+  font-size: 24px;
+  top: 50px;
+  animation: fade-in 5000ms;
+  animation-fill-mode: forwards;
+  animation-delay: 1500ms;
 }
 
 .page2 {
@@ -56,6 +67,7 @@ body {
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #121212;
+  border-bottom: 2px solid #121212;
   color: white;
 }
 
@@ -63,4 +75,28 @@ body {
 .topnav a.active {
   color: white;
   border-bottom: 2px solid red;
+}
+
+.pfp {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  opacity: 0;
+  height: 100%;
+  width: 40%;
+  transition: 500ms;
+  margin: 10px;
+  background-color: green;
+}
+
+.pfp:hover .overlay {
+  opacity: 1;
 }
