@@ -1,0 +1,137 @@
+.ball-wrapper {
+  position: absolute;
+  display: block;
+  width: 40%;
+  height: 20%;
+  margin: 10% 5%;
+  color: white;
+  font-size: 24px;
+}
+
+.block1 {
+  position: relative;
+  background: #333;
+  width: 250px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.a1 {
+  animation: rope-swing1 1500ms;
+  animation-direction: alternate;
+  transform: rotate(70deg);
+}
+
+.a2 {
+  animation: rope-swing2 1500ms;
+  animation-direction: alternate-reverse;
+  transform: rotate(-70deg);
+}
+
+.ball {
+  position: relative;
+  background: green;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.b1 {
+  top: -400px;
+  left: -90px;
+  transform-origin: center -90px;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.b2 {
+  top: -454px;
+  left: -45px;
+}
+
+.b3 {
+  top: -508px;
+  left: 0px;
+}
+
+.b4 {
+  top: -562px;
+  left: 45px;
+}
+
+.b5 {
+  top: -616px;
+  left: 90px;
+  transform-origin: center -90px;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.string {
+  position: relative;
+  height: 100px;
+  width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background: grey;
+}
+
+.s1 {
+  top: 0;
+  left: -90px;
+  transform-origin: top center;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.s2 {
+  top: -100px;
+  left: -45px;
+}
+
+.s3 {
+  top: -200px;
+  left: 0px;
+}
+
+.s4 {
+  top: -300px;
+  left: 45px;
+}
+
+.s5 {
+  top: -400px;
+  left: 90px;
+  transform-origin: top center;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes rope-swing1 {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rope-swing2 {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
