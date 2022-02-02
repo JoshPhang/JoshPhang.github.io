@@ -1,11 +1,12 @@
-.ball-wrapper {
+.newton-cradle {
   position: absolute;
   display: block;
   width: 40%;
   height: 20%;
-  margin: 10% 5%;
+  margin: 10% 1%;
   color: white;
   font-size: 24px;
+  left: 5%;
 }
 
 .block1 {
@@ -29,15 +30,15 @@
   transform: rotate(-70deg);
 }
 
-.ball {
+.sphere {
   position: relative;
-  background: green;
+  background: radial-gradient(circle at 17px 17px, green, #000);
   margin-left: auto;
   margin-right: auto;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid black;
+  /* border: 1px solid black; */
 }
 
 .b1 {
@@ -51,22 +52,22 @@
 }
 
 .b2 {
-  top: -454px;
+  top: -450px;
   left: -45px;
 }
 
 .b3 {
-  top: -508px;
+  top: -500px;
   left: 0px;
 }
 
 .b4 {
-  top: -562px;
+  top: -550px;
   left: 45px;
 }
 
 .b5 {
-  top: -616px;
+  top: -600px;
   left: 90px;
   transform-origin: center -90px;
   animation-delay: 0ms;
