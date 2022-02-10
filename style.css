@@ -19,7 +19,7 @@ body {
 .welcome {
   position: relative;
   text-align: center;
-  color: #1d1d1c;
+  color: #1d1c1c;
   font-size: 24px;
   top: 50px;
   animation: fade-in 5000ms;
