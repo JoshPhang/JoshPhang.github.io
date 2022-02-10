@@ -8,3 +8,9 @@
   font-size: 24px;
   right: 5%;
 }
+
+.grade-calculator {
+  position: relative;
+  top: 30px;
+  right: 5%;
+}
