@@ -13,16 +13,17 @@
   background: #1d1c1c;
   position: absolute;
   display: block;
-  width: 110%;
+  width: max(420px, 110%);
   height: 125%;
-  top: 25%;
-  left: -5%;
+  top: 35px;
   border-radius: 2em;
   opacity: 1;
   transition: 1000ms ease;
   line-height: 600%;
   color: white;
   font-size: 16px;
+  align-items: center;
+  transform: translateX(max(-0.1 * 460px, -0.1 * 110%));
 }
 
 .cradle-hover:hover {

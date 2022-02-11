@@ -10,7 +10,8 @@
     <title>My Website - Page 2</title>
     <link href="style.css" rel="stylesheet" />
     <link href="newtonCradle.css" rel="stylesheet" />
-    <link href="nextProject.css" rel="stylesheet" />
+    <link href="gradeCalculator.css" rel="stylesheet" />
+    <script src="gradeCalculator.js"></script>
   </head>
 
   <div class="topnav">
@@ -38,20 +39,20 @@
   </div>
 
   <!--Grade Calculator-->
-  <div id="temp1" class="next-project">
-    Grade Calculator (in progress)
-    <form action="myFunction()">
-      <label for="fname">Class:</label>
-      <input type="text" id="fname" /><br />
-      <label for="lname">Percentage:</label>
-      <input type="text" id="lname" /><br /><br />
-      <button type="button" onclick="myFunction()">Submit</button>
-    </form>
+  <div class="grade-calculator">
+    Grade Calculator
+    <br />
+    <p>Number of Assignments:
+      <input type="number" class="num-fill" id="member" name="member">
+      <button type="button" onclick="addSlots()">Reset</button>
+    </p>
+    <button onclick="addAssignment()" id="addbutton" hidden>Add</button>
+    <button onclick="removeAssignment()" id="rembutton" hidden>Remove</button>
+    <br />
+    <a class="grade-calculator-title" id="gtitle"></a>
+    <a class="grade-calculator-title" id="wtitle"></a>
+    <div id="grade-calculator"></div>
+    <p class="final-grade" id="fgrade"></p>
+    <button onclick="myFunction()" id="calcbutton" hidden>Calculate</button>
   </div>
-
-  <script>
-    function myFunction() {
-      console.log("hello");
-    }
-  </script>
 </html>
