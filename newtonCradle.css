@@ -13,10 +13,10 @@
   background: #1d1c1c;
   position: absolute;
   display: block;
-  height: 100%;
-  width: 110%;
-  left: -5%;
-  top: 15%;
+  height: 200px;
+  width: 450px;
+  left: 80px;
+  top: 30px;
   border-radius: 2em;
   opacity: 1;
   transition: 1000ms ease;
