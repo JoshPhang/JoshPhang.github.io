@@ -8,8 +8,10 @@ body {
     top: 10%;
     font-size: 32px;
     font-family: "Titillium Web", sans-serif;
-    height: 85%;
+    height: 90%;
     width: 100%;
+    display: grid;
+    grid-template-areas: 'Score Input Timer' '. Addition .' '. Button .'
 }
 
 .num-input {
@@ -18,6 +20,11 @@ body {
     font-size: 24px;
     border-radius: 25px;
     text-align: center;
+    grid-area: Input;
+}
+
+.addition {
+    grid-area: Addition;
 }
 
 .start-btn {
@@ -26,14 +33,22 @@ body {
     font-size: 18px;
     background-color: white;
     border-radius: 10px;
+    grid-area: Button;
+    align-self: center;
 }
 
 .timer {
     font-size: 24px;
+    grid-area: Timer;
+    text-align: right;
+    margin-right: 10px;
 }
 
 .score-lbl {
     font-size: 24px;
+    grid-area: Score;
+    text-align: left;
+    margin-left: 10px;
 }
 
 .race-link {
@@ -57,7 +72,6 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    /* background-color: darkslateblue; */
 }
 
 .star {
@@ -67,10 +81,11 @@ body {
     animation-iteration-count: infinite;
     animation-delay: -1s;
     animation-timing-function: linear;
+    z-index: -1;
 }
 
 @keyframes starFly {
     to {
-        top: -50%;
+        top: -100%;
     }
 }

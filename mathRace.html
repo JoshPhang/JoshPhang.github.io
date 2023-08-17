@@ -1,10 +1,10 @@
 <html>
-  <head>
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet"
     />
 
     <title>My Website - Page 2</title>
@@ -12,34 +12,34 @@
     <link href="style.css" rel="stylesheet" />
 
     <script src="mathRace.js"></script>
-  </head>
+</head>
 
-  <div class="topnav">
-    <a href="index.html">JP</a>
-    <a href="contact.html" style="float: right">Contact</a>
-    <a href="about.html" style="float: right">About Me</a>
-    <a href="cssProjects.html" style="float: right">Projects</a>
-  </div>
+<body>
+    <div class="topnav">
+        <a href="index.html">JP</a>
+        <a href="contact.html" style="float: right">Contact</a>
+        <a href="about.html" style="float: right">About Me</a>
+        <a href="cssProjects.html" style="float: right">Projects</a>
+    </div>
 
-  <!--Addition Race-->
-  <div class="math-race">
-    Math Race
+    <!--Addition Race -->
+    <div class="math-race">
+        <p id="timer" class="timer" hidden>Time remaining: -</p>
+        <p id="numbers" class="addition"></p>
+        <button onClick="startRace()" class="start-btn" id="startButton">Play</button>
     
-    <p id="timer" class="timer">Time remaining: -</p>
-    <p id="numbers"></p>
-    <button onClick="startRace()" class="start-btn" id="startButton">Play</button>
-    
-    <p>
-      <input type="string" class="num-input" id="mathInput" name="member" maxLength="4" hidden>
-    </p>
-    <p id="scoreLabel" class="score-lbl" hidden>
-      Score: -
-    </p>
+        <p>
+            <input type="string" class="num-input" id="mathInput" name="member" maxLength="4" hidden>
+        </p>
+        <p id="scoreLabel" class="score-lbl" hidden>
+            Score: -
+        </p>
+    </div>
+
+    <!-- Rocket Ship -->
+
+
     <!-- Stars -->
     <div class="star-container" id="starholder"></div>
-  </div>
-<body>
 </body>
-
-
 </html>

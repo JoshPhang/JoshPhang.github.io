@@ -6,6 +6,7 @@ function startRace() {
     document.getElementById("startButton").setAttribute("hidden", true);
     document.getElementById("mathInput").removeAttribute("hidden");
     document.getElementById("scoreLabel").removeAttribute("hidden");
+    document.getElementById("timer").removeAttribute("hidden");
     document.getElementById("mathInput").focus();
     newAddition();
 
@@ -19,10 +20,10 @@ function startRace() {
         star.id = "stars";
         star.className = "star";
         star.style.left = posx + "%";
-        star.style.top = (posy + 100) + "%";
+        star.style.top = (posy + 50) + "%";
         star.style.height = scale;
         star.style.width = scale;
-        star.style.animationDuration = (8 - scale) + "s";
+        star.style.animationDuration = (9 - scale) + "s";
         document.getElementById("starholder").appendChild(star);
         numStar++;
         if (numStar >= 100) {
@@ -58,6 +59,7 @@ function startTimer() {
             document.getElementById("numbers").setAttribute("hidden", true);
             document.getElementById("mathInput").setAttribute("hidden", true);
             timer.innerHTML = "Time's up!";
+            document.getElementById("starholder").remove();
             
             document.getElementById("startButton").removeAttribute("hidden");
             clearInterval(timerInterval);
